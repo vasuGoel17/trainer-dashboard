@@ -1,57 +1,3048 @@
-html {
-    background-color: #202731;
-}
 
-.container {
+@media only screen and (min-width: 0px) {
+    html {
+      background-color: #202731;
+    }
+  
+    .container {
+      background-color: #101318;
+      width: 480%;
+      margin: auto;
+      /* height: 80vh; */
+      padding: 20px;
+      border-radius: 20px;
+      margin-top: 50px;
+    }
+  
+    .progress-bar-text {
+      position: absolute;
+      margin-top: -22px;
+      font-size: 9px;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .health-detail-cntnr .heading {
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      font-size: 20px;
+    }
+  
+    .image img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      margin-left: 20px;
+      margin-top: 17px;
+    }
+  
+    .name-email {
+      margin-top: 12px;
+      margin-left: 17px;
+    }
+  
+    .name-email span {
+      font-weight: 600;
+    }
+  
+    .name-email small {
+      font-weight: 100;
+      font-size: 11px;
+    }
+  
+    .user-detail {
+      background-color: #1f2630;
+      width: 100%;
+      height: 70px;
+      color: whitesmoke;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      display: flex;
+    }
+  
+    .progress-bar {
+      padding: 0px;
+      margin-top: 10px;
+      margin-left: 70px;
+    }
+  
+    /* .user-detail {
+            width: 100%;
+            height: 100px;
+        } */
+  
+    .time-increase button {
+      width: 10px;
+      border-radius: 20px;
+      height: 40px;
+      color: white;
+      background-color: #1f2630;
+    }
+  
+    .heading-h4-data {
+      margin-right: -264px;
+      margin-left: 335px;
+    }
+  
+    .pie-chart-text {
+      position: absolute;
+      font-size: 9px;
+      margin-left: 10px;
+      margin-top: -37px;
+    }
+  
+    .progress-bar-btn {
+      margin-left: 17px;
+      margin-top: 1px;
+    }
+  
+    .progress-bar-plus-btn {
+      background-color: black;
+      color: white;
+      width: 28px;
+      height: 18px;
+      border-radius: 5px;
+    }
+  
+    .progress-bar-btn-text-step-target {
+      font-weight: 500;
+      font-size: 15px;
+      text-align: center;
+      position: relative;
+    }
+  
+    .progress-bar-btn-text {
+      font-size: 9px;
+      margin-top: -3px;
+      position: absolute;
+    }
+  
+    .progress-bar-minus-btn {
+      background-color: black;
+      color: white;
+      width: 28px;
+      height: 18px;
+      border-radius: 5px;
+      margin-top: -8px;
+      position: absolute;
+    }
+  
+    .time-duration {
+      /* margin-left: 123px; */
+      margin-left: 80px;
+      margin-top: 7px;
+    }
+  
+    .performed-date {
+      margin-top: -20px;
+    }
+  
+    .scheduled-date {
+    }
+  
+    .time-duration-check-cntnr {
+      margin-left: 16px;
+    }
+  
+    .time-duration-check-btn {
+      color: white;
+      background-color: black;
+      height: 60px;
+      margin-top: 5px;
+      border-radius: 6px;
+    }
+  
+    .time-duration-check-red-btn {
+      background-color: #cc0000;
+      color: white;
+      width: 25px;
+      height: 60px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #cc0000;
+    }
+  
+    .pie-chart {
+      margin-left: 100px;
+      margin-top: 10px;
+    }
+  
+    .notification-cntnr {
+      margin-left: 60px;
+      margin-top: 13px;
+    }
+  
+    .notification-btn {
+      background-color: #3df1c2;
+      width: 35px;
+      height: 40px;
+      border: 1px solid #3df1c2;
+      border-radius: 10px;
+    }
+  
+    .tool-tip-cntnr {
+      width: 250px;
+      height: 140px;
+      padding: 2px;
+      background-color: #1f2630;
+      border-radius: 5px;
+      margin-top: 13px;
+      position: absolute;
+    }
+  
+    .tool-tip-border {
+      height: 10px;
+      width: 97%;
+      border: 1px solid #101318;
+      background-color: #101318;
+      display: flex;
+      align-items: center;
+    }
+  
+    .tool-tip-protein {
+      height: 8px;
+      width: 70%;
+      margin-bottom: 1px;
+      background-color: #d17286;
+    }
+  
+    .protein-cntnr {
+      width: 94%;
+      background-color: rgb(13 15 18);
+      border-radius: 5px;
+      padding: 7px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  
+    .protein {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .protein span {
+      float: right;
+      color: white;
+    }
+  
+    .fats-cntnr {
+      width: 94%;
+      background-color: rgb(13 15 18);
+      border-radius: 5px;
+      padding: 7px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  
+    .fats span {
+      float: right;
+      color: white;
+    }
+  
+    .fats {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .tool-tip-fats {
+      height: 8px;
+      width: 60%;
+      margin-bottom: 1px;
+      background-color: #50afcf;
+    }
+  
+    .carbs-cntnr {
+      width: 94%;
+      background-color: rgb(13 15 18);
+      border-radius: 5px;
+      padding: 7px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  
+    .carbs span {
+      float: right;
+      color: white;
+    }
+  
+    .carbs {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .tool-tip-carbs {
+      height: 8px;
+      width: 80%;
+      margin-bottom: 1px;
+      background-color: #dfcb74;
+    }
+  
+    .tool-tip-border p {
+      color: white;
+      margin: 0;
+      padding: 0;
+      font-size: 8px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 250px) {
+    html {
+      background-color: #202731;
+    }
+  
+    .container {
+      background-color: #101318;
+      width: 380%;
+      margin: auto;
+      /* height: 80vh; */
+      padding: 20px;
+      border-radius: 20px;
+      margin-top: 50px;
+    }
+  
+    .progress-bar-text {
+      position: absolute;
+      margin-top: -22px;
+      font-size: 9px;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .health-detail-cntnr .heading {
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      font-size: 20px;
+    }
+  
+    .image img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      margin-left: 20px;
+      margin-top: 17px;
+    }
+  
+    .name-email {
+      margin-top: 12px;
+      margin-left: 17px;
+    }
+  
+    .name-email span {
+      font-weight: 600;
+    }
+  
+    .name-email small {
+      font-weight: 100;
+      font-size: 11px;
+    }
+  
+    .user-detail {
+      background-color: #1f2630;
+      width: 100%;
+      height: 70px;
+      color: whitesmoke;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      display: flex;
+    }
+  
+    .progress-bar {
+      padding: 0px;
+      margin-top: 10px;
+      margin-left: 70px;
+    }
+  
+    /* .user-detail {
+            width: 100%;
+            height: 100px;
+        } */
+  
+    .time-increase button {
+      width: 10px;
+      border-radius: 20px;
+      height: 40px;
+      color: white;
+      background-color: #1f2630;
+    }
+  
+    .heading-h4-data {
+      margin-right: -264px;
+      margin-left: 335px;
+    }
+  
+    .pie-chart-text {
+      position: absolute;
+      font-size: 9px;
+      margin-left: 10px;
+      margin-top: -37px;
+    }
+  
+    .progress-bar-btn {
+      margin-left: 17px;
+      margin-top: 1px;
+    }
+  
+    .progress-bar-plus-btn {
+      background-color: black;
+      color: white;
+      width: 28px;
+      height: 18px;
+      border-radius: 5px;
+    }
+  
+    .progress-bar-btn-text-step-target {
+      font-weight: 500;
+      font-size: 15px;
+      text-align: center;
+      position: relative;
+    }
+  
+    .progress-bar-btn-text {
+      font-size: 9px;
+      margin-top: -3px;
+      position: absolute;
+    }
+  
+    .progress-bar-minus-btn {
+      background-color: black;
+      color: white;
+      width: 28px;
+      height: 18px;
+      border-radius: 5px;
+      margin-top: -8px;
+      position: absolute;
+    }
+  
+    .time-duration {
+      /* margin-left: 123px; */
+      margin-left: 80px;
+      margin-top: 7px;
+    }
+  
+    .performed-date {
+      margin-top: -20px;
+    }
+  
+    .scheduled-date {
+    }
+  
+    .time-duration-check-cntnr {
+      margin-left: 16px;
+    }
+  
+    .time-duration-check-btn {
+      color: white;
+      background-color: black;
+      height: 60px;
+      margin-top: 5px;
+      border-radius: 6px;
+    }
+  
+    .time-duration-check-red-btn {
+      background-color: #cc0000;
+      color: white;
+      width: 25px;
+      height: 60px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #cc0000;
+    }
+  
+    .pie-chart {
+      margin-left: 100px;
+      margin-top: 10px;
+    }
+  
+    .notification-cntnr {
+      margin-left: 60px;
+      margin-top: 13px;
+    }
+  
+    .notification-btn {
+      background-color: #3df1c2;
+      width: 35px;
+      height: 40px;
+      border: 1px solid #3df1c2;
+      border-radius: 10px;
+    }
+  
+    .tool-tip-cntnr {
+      width: 250px;
+      height: 140px;
+      padding: 2px;
+      background-color: #1f2630;
+      border-radius: 5px;
+      margin-top: 13px;
+      position: absolute;
+    }
+  
+    .tool-tip-border {
+      height: 10px;
+      width: 97%;
+      border: 1px solid #101318;
+      background-color: #101318;
+      display: flex;
+      align-items: center;
+    }
+  
+    .tool-tip-protein {
+      height: 8px;
+      width: 70%;
+      margin-bottom: 1px;
+      background-color: #d17286;
+    }
+  
+    .protein-cntnr {
+      width: 94%;
+      background-color: rgb(13 15 18);
+      border-radius: 5px;
+      padding: 7px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  
+    .protein {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .protein span {
+      float: right;
+      color: white;
+    }
+  
+    .fats-cntnr {
+      width: 94%;
+      background-color: rgb(13 15 18);
+      border-radius: 5px;
+      padding: 7px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  
+    .fats span {
+      float: right;
+      color: white;
+    }
+  
+    .fats {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .tool-tip-fats {
+      height: 8px;
+      width: 60%;
+      margin-bottom: 1px;
+      background-color: #50afcf;
+    }
+  
+    .carbs-cntnr {
+      width: 94%;
+      background-color: rgb(13 15 18);
+      border-radius: 5px;
+      padding: 7px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  
+    .carbs span {
+      float: right;
+      color: white;
+    }
+  
+    .carbs {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .tool-tip-carbs {
+      height: 8px;
+      width: 80%;
+      margin-bottom: 1px;
+      background-color: #dfcb74;
+    }
+  
+    .tool-tip-border p {
+      color: white;
+      margin: 0;
+      padding: 0;
+      font-size: 8px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 320px) {
+    html {
+      background-color: #202731;
+    }
+  
+    .container {
+      background-color: #101318;
+      width: 300%;
+      margin: auto;
+      /* height: 80vh; */
+      padding: 20px;
+      border-radius: 20px;
+      margin-top: 50px;
+    }
+  
+    .progress-bar-text {
+      position: absolute;
+      margin-top: -22px;
+      font-size: 9px;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .health-detail-cntnr .heading {
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      font-size: 20px;
+    }
+  
+    .image img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      margin-left: 20px;
+      margin-top: 17px;
+    }
+  
+    .name-email {
+      margin-top: 12px;
+      margin-left: 17px;
+    }
+  
+    .name-email span {
+      font-weight: 600;
+    }
+  
+    .name-email small {
+      font-weight: 100;
+      font-size: 11px;
+    }
+  
+    .user-detail {
+      background-color: #1f2630;
+      width: 100%;
+      height: 70px;
+      color: whitesmoke;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      display: flex;
+    }
+  
+    .progress-bar {
+      padding: 0px;
+      margin-top: 10px;
+      margin-left: 70px;
+    }
+  
+    /* .user-detail {
+            width: 100%;
+            height: 100px;
+        } */
+  
+    .time-increase button {
+      width: 10px;
+      border-radius: 20px;
+      height: 40px;
+      color: white;
+      background-color: #1f2630;
+    }
+  
+    .heading-h4-data {
+      margin-right: -264px;
+      margin-left: 335px;
+    }
+  
+    .pie-chart-text {
+      position: absolute;
+      font-size: 9px;
+      margin-left: 10px;
+      margin-top: -37px;
+    }
+  
+    .progress-bar-btn {
+      margin-left: 17px;
+      margin-top: 1px;
+    }
+  
+    .progress-bar-plus-btn {
+      background-color: black;
+      color: white;
+      width: 28px;
+      height: 18px;
+      border-radius: 5px;
+    }
+  
+    .progress-bar-btn-text-step-target {
+      font-weight: 500;
+      font-size: 15px;
+      text-align: center;
+      position: relative;
+    }
+  
+    .progress-bar-btn-text {
+      font-size: 9px;
+      margin-top: -3px;
+      position: absolute;
+    }
+  
+    .progress-bar-minus-btn {
+      background-color: black;
+      color: white;
+      width: 28px;
+      height: 18px;
+      border-radius: 5px;
+      margin-top: -8px;
+      position: absolute;
+    }
+  
+    .time-duration {
+      /* margin-left: 123px; */
+      margin-left: 80px;
+      margin-top: 7px;
+    }
+  
+    .performed-date {
+      margin-top: -20px;
+    }
+  
+    .scheduled-date {
+    }
+  
+    .time-duration-check-cntnr {
+      margin-left: 16px;
+    }
+  
+    .time-duration-check-btn {
+      color: white;
+      background-color: black;
+      height: 60px;
+      margin-top: 5px;
+      border-radius: 6px;
+    }
+  
+    .time-duration-check-red-btn {
+      background-color: #cc0000;
+      color: white;
+      width: 25px;
+      height: 60px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #cc0000;
+    }
+  
+    .pie-chart {
+      margin-left: 100px;
+      margin-top: 10px;
+    }
+  
+    .notification-cntnr {
+      margin-left: 60px;
+      margin-top: 13px;
+    }
+  
+    .notification-btn {
+      background-color: #3df1c2;
+      width: 35px;
+      height: 40px;
+      border: 1px solid #3df1c2;
+      border-radius: 10px;
+    }
+  
+    .tool-tip-cntnr {
+      width: 250px;
+      height: 140px;
+      padding: 2px;
+      background-color: #1f2630;
+      border-radius: 5px;
+      margin-top: 13px;
+      position: absolute;
+    }
+  
+    .tool-tip-border {
+      height: 10px;
+      width: 97%;
+      border: 1px solid #101318;
+      background-color: #101318;
+      display: flex;
+      align-items: center;
+    }
+  
+    .tool-tip-protein {
+      height: 8px;
+      width: 70%;
+      margin-bottom: 1px;
+      background-color: #d17286;
+    }
+  
+    .protein-cntnr {
+      width: 94%;
+      background-color: rgb(13 15 18);
+      border-radius: 5px;
+      padding: 7px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  
+    .protein {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .protein span {
+      float: right;
+      color: white;
+    }
+  
+    .fats-cntnr {
+      width: 94%;
+      background-color: rgb(13 15 18);
+      border-radius: 5px;
+      padding: 7px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  
+    .fats span {
+      float: right;
+      color: white;
+    }
+  
+    .fats {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .tool-tip-fats {
+      height: 8px;
+      width: 60%;
+      margin-bottom: 1px;
+      background-color: #50afcf;
+    }
+  
+    .carbs-cntnr {
+      width: 94%;
+      background-color: rgb(13 15 18);
+      border-radius: 5px;
+      padding: 7px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  
+    .carbs span {
+      float: right;
+      color: white;
+    }
+  
+    .carbs {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .tool-tip-carbs {
+      height: 8px;
+      width: 80%;
+      margin-bottom: 1px;
+      background-color: #dfcb74;
+    }
+  
+    .tool-tip-border p {
+      color: white;
+      margin: 0;
+      padding: 0;
+      font-size: 8px;
+    }
+  }
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 400px) {
+    html {
+      background-color: #202731;
+    }
+  
+    .container {
+      background-color: #101318;
+      width: 240%;
+      margin: auto;
+      /* height: 80vh; */
+      padding: 20px;
+      border-radius: 20px;
+      margin-top: 50px;
+    }
+  
+    .progress-bar-text {
+      position: absolute;
+      margin-top: -22px;
+      font-size: 9px;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .health-detail-cntnr .heading {
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      font-size: 20px;
+    }
+  
+    .image img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      margin-left: 20px;
+      margin-top: 17px;
+    }
+  
+    .name-email {
+      margin-top: 12px;
+      margin-left: 17px;
+    }
+  
+    .name-email span {
+      font-weight: 600;
+    }
+  
+    .name-email small {
+      font-weight: 100;
+      font-size: 11px;
+    }
+  
+    .user-detail {
+      background-color: #1f2630;
+      width: 100%;
+      height: 70px;
+      color: whitesmoke;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      display: flex;
+    }
+  
+    .progress-bar {
+      padding: 0px;
+      margin-top: 10px;
+      margin-left: 70px;
+    }
+  
+    /* .user-detail {
+            width: 100%;
+            height: 100px;
+        } */
+  
+    .time-increase button {
+      width: 10px;
+      border-radius: 20px;
+      height: 40px;
+      color: white;
+      background-color: #1f2630;
+    }
+  
+    .heading-h4-data {
+      margin-right: -264px;
+      margin-left: 335px;
+    }
+  
+    .pie-chart-text {
+      position: absolute;
+      font-size: 9px;
+      margin-left: 10px;
+      margin-top: -37px;
+    }
+  
+    .progress-bar-btn {
+      margin-left: 17px;
+      margin-top: 1px;
+    }
+  
+    .progress-bar-plus-btn {
+      background-color: black;
+      color: white;
+      width: 28px;
+      height: 18px;
+      border-radius: 5px;
+    }
+  
+    .progress-bar-btn-text-step-target {
+      font-weight: 500;
+      font-size: 15px;
+      text-align: center;
+      position: relative;
+    }
+  
+    .progress-bar-btn-text {
+      font-size: 9px;
+      margin-top: -3px;
+      position: absolute;
+    }
+  
+    .progress-bar-minus-btn {
+      background-color: black;
+      color: white;
+      width: 28px;
+      height: 18px;
+      border-radius: 5px;
+      margin-top: -8px;
+      position: absolute;
+    }
+  
+    .time-duration {
+      /* margin-left: 123px; */
+      margin-left: 80px;
+      margin-top: 7px;
+    }
+  
+    .performed-date {
+      margin-top: -20px;
+    }
+  
+    .scheduled-date {
+    }
+  
+    .time-duration-check-cntnr {
+      margin-left: 16px;
+    }
+  
+    .time-duration-check-btn {
+      color: white;
+      background-color: black;
+      height: 60px;
+      margin-top: 5px;
+      border-radius: 6px;
+    }
+  
+    .time-duration-check-red-btn {
+      background-color: #cc0000;
+      color: white;
+      width: 25px;
+      height: 60px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #cc0000;
+    }
+  
+    .pie-chart {
+      margin-left: 100px;
+      margin-top: 10px;
+    }
+  
+    .notification-cntnr {
+      margin-left: 60px;
+      margin-top: 13px;
+    }
+  
+    .notification-btn {
+      background-color: #3df1c2;
+      width: 35px;
+      height: 40px;
+      border: 1px solid #3df1c2;
+      border-radius: 10px;
+    }
+  
+    .tool-tip-cntnr {
+      width: 250px;
+      height: 140px;
+      padding: 2px;
+      background-color: #1f2630;
+      border-radius: 5px;
+      margin-top: 13px;
+      position: absolute;
+    }
+  
+    .tool-tip-border {
+      height: 10px;
+      width: 97%;
+      border: 1px solid #101318;
+      background-color: #101318;
+      display: flex;
+      align-items: center;
+    }
+  
+    .tool-tip-protein {
+      height: 8px;
+      width: 70%;
+      margin-bottom: 1px;
+      background-color: #d17286;
+    }
+  
+    .protein-cntnr {
+      width: 94%;
+      background-color: rgb(13 15 18);
+      border-radius: 5px;
+      padding: 7px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  
+    .protein {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .protein span {
+      float: right;
+      color: white;
+    }
+  
+    .fats-cntnr {
+      width: 94%;
+      background-color: rgb(13 15 18);
+      border-radius: 5px;
+      padding: 7px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  
+    .fats span {
+      float: right;
+      color: white;
+    }
+  
+    .fats {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .tool-tip-fats {
+      height: 8px;
+      width: 60%;
+      margin-bottom: 1px;
+      background-color: #50afcf;
+    }
+  
+    .carbs-cntnr {
+      width: 94%;
+      background-color: rgb(13 15 18);
+      border-radius: 5px;
+      padding: 7px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  
+    .carbs span {
+      float: right;
+      color: white;
+    }
+  
+    .carbs {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .tool-tip-carbs {
+      height: 8px;
+      width: 80%;
+      margin-bottom: 1px;
+      background-color: #dfcb74;
+    }
+  
+    .tool-tip-border p {
+      color: white;
+      margin: 0;
+      padding: 0;
+      font-size: 8px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 500px) {
+    html {
+      background-color: #202731;
+    }
+  
+    .container {
+      background-color: #101318;
+      width: 190%;
+      margin: auto;
+      /* height: 80vh; */
+      padding: 20px;
+      border-radius: 20px;
+      margin-top: 50px;
+    }
+  
+    .progress-bar-text {
+      position: absolute;
+      margin-top: -22px;
+      font-size: 9px;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .health-detail-cntnr .heading {
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      font-size: 20px;
+    }
+  
+    .image img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      margin-left: 20px;
+      margin-top: 17px;
+    }
+  
+    .name-email {
+      margin-top: 12px;
+      margin-left: 17px;
+    }
+  
+    .name-email span {
+      font-weight: 600;
+    }
+  
+    .name-email small {
+      font-weight: 100;
+      font-size: 11px;
+    }
+  
+    .user-detail {
+      background-color: #1f2630;
+      width: 100%;
+      height: 70px;
+      color: whitesmoke;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      display: flex;
+    }
+  
+    .progress-bar {
+      padding: 0px;
+      margin-top: 10px;
+      margin-left: 70px;
+    }
+  
+    /* .user-detail {
+            width: 100%;
+            height: 100px;
+        } */
+  
+    .time-increase button {
+      width: 10px;
+      border-radius: 20px;
+      height: 40px;
+      color: white;
+      background-color: #1f2630;
+    }
+  
+    .heading-h4-data {
+      margin-right: -264px;
+      margin-left: 335px;
+    }
+  
+    .pie-chart-text {
+      position: absolute;
+      font-size: 9px;
+      margin-left: 10px;
+      margin-top: -37px;
+    }
+  
+    .progress-bar-btn {
+      margin-left: 17px;
+      margin-top: 1px;
+    }
+  
+    .progress-bar-plus-btn {
+      background-color: black;
+      color: white;
+      width: 28px;
+      height: 18px;
+      border-radius: 5px;
+    }
+  
+    .progress-bar-btn-text-step-target {
+      font-weight: 500;
+      font-size: 15px;
+      text-align: center;
+      position: relative;
+    }
+  
+    .progress-bar-btn-text {
+      font-size: 9px;
+      margin-top: -3px;
+      position: absolute;
+    }
+  
+    .progress-bar-minus-btn {
+      background-color: black;
+      color: white;
+      width: 28px;
+      height: 18px;
+      border-radius: 5px;
+      margin-top: -8px;
+      position: absolute;
+    }
+  
+    .time-duration {
+      /* margin-left: 123px; */
+      margin-left: 80px;
+      margin-top: 7px;
+    }
+  
+    .performed-date {
+      margin-top: -20px;
+    }
+  
+    .scheduled-date {
+    }
+  
+    .time-duration-check-cntnr {
+      margin-left: 16px;
+    }
+  
+    .time-duration-check-btn {
+      color: white;
+      background-color: black;
+      height: 60px;
+      margin-top: 5px;
+      border-radius: 6px;
+    }
+  
+    .time-duration-check-red-btn {
+      background-color: #cc0000;
+      color: white;
+      width: 25px;
+      height: 60px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #cc0000;
+    }
+  
+    .pie-chart {
+      margin-left: 100px;
+      margin-top: 10px;
+    }
+  
+    .notification-cntnr {
+      margin-left: 60px;
+      margin-top: 13px;
+    }
+  
+    .notification-btn {
+      background-color: #3df1c2;
+      width: 35px;
+      height: 40px;
+      border: 1px solid #3df1c2;
+      border-radius: 10px;
+    }
+  
+    .tool-tip-cntnr {
+      width: 250px;
+      height: 140px;
+      padding: 2px;
+      background-color: #1f2630;
+      border-radius: 5px;
+      margin-top: 13px;
+      position: absolute;
+    }
+  
+    .tool-tip-border {
+      height: 10px;
+      width: 97%;
+      border: 1px solid #101318;
+      background-color: #101318;
+      display: flex;
+      align-items: center;
+    }
+  
+    .tool-tip-protein {
+      height: 8px;
+      width: 70%;
+      margin-bottom: 1px;
+      background-color: #d17286;
+    }
+  
+    .protein-cntnr {
+      width: 94%;
+      background-color: rgb(13 15 18);
+      border-radius: 5px;
+      padding: 7px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  
+    .protein {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .protein span {
+      float: right;
+      color: white;
+    }
+  
+    .fats-cntnr {
+      width: 94%;
+      background-color: rgb(13 15 18);
+      border-radius: 5px;
+      padding: 7px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  
+    .fats span {
+      float: right;
+      color: white;
+    }
+  
+    .fats {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .tool-tip-fats {
+      height: 8px;
+      width: 60%;
+      margin-bottom: 1px;
+      background-color: #50afcf;
+    }
+  
+    .carbs-cntnr {
+      width: 94%;
+      background-color: rgb(13 15 18);
+      border-radius: 5px;
+      padding: 7px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  
+    .carbs span {
+      float: right;
+      color: white;
+    }
+  
+    .carbs {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .tool-tip-carbs {
+      height: 8px;
+      width: 80%;
+      margin-bottom: 1px;
+      background-color: #dfcb74;
+    }
+  
+    .tool-tip-border p {
+      color: white;
+      margin: 0;
+      padding: 0;
+      font-size: 8px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 600px) {
+    html {
+      background-color: #202731;
+    }
+  
+    .container {
+      background-color: #101318;
+      width: 160%;
+      margin: auto;
+      /* height: 80vh; */
+      padding: 20px;
+      border-radius: 20px;
+      margin-top: 50px;
+    }
+  
+    .progress-bar-text {
+      position: absolute;
+      margin-top: -22px;
+      font-size: 9px;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .health-detail-cntnr .heading {
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      font-size: 20px;
+    }
+  
+    .image img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      margin-left: 20px;
+      margin-top: 17px;
+    }
+  
+    .name-email {
+      margin-top: 12px;
+      margin-left: 17px;
+    }
+  
+    .name-email span {
+      font-weight: 600;
+    }
+  
+    .name-email small {
+      font-weight: 100;
+      font-size: 11px;
+    }
+  
+    .user-detail {
+      background-color: #1f2630;
+      width: 100%;
+      height: 70px;
+      color: whitesmoke;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      display: flex;
+    }
+  
+    .progress-bar {
+      padding: 0px;
+      margin-top: 10px;
+      margin-left: 70px;
+    }
+  
+    /* .user-detail {
+            width: 100%;
+            height: 100px;
+        } */
+  
+    .time-increase button {
+      width: 10px;
+      border-radius: 20px;
+      height: 40px;
+      color: white;
+      background-color: #1f2630;
+    }
+  
+    .heading-h4-data {
+      margin-right: -264px;
+      margin-left: 335px;
+    }
+  
+    .pie-chart-text {
+      position: absolute;
+      font-size: 9px;
+      margin-left: 10px;
+      margin-top: -37px;
+    }
+  
+    .progress-bar-btn {
+      margin-left: 17px;
+      margin-top: 1px;
+    }
+  
+    .progress-bar-plus-btn {
+      background-color: black;
+      color: white;
+      width: 28px;
+      height: 18px;
+      border-radius: 5px;
+    }
+  
+    .progress-bar-btn-text-step-target {
+      font-weight: 500;
+      font-size: 15px;
+      text-align: center;
+      position: relative;
+    }
+  
+    .progress-bar-btn-text {
+      font-size: 9px;
+      margin-top: -3px;
+      position: absolute;
+    }
+  
+    .progress-bar-minus-btn {
+      background-color: black;
+      color: white;
+      width: 28px;
+      height: 18px;
+      border-radius: 5px;
+      margin-top: -8px;
+      position: absolute;
+    }
+  
+    .time-duration {
+      /* margin-left: 123px; */
+      margin-left: 80px;
+      margin-top: 7px;
+    }
+  
+    .performed-date {
+      margin-top: -20px;
+    }
+  
+    .scheduled-date {
+    }
+  
+    .time-duration-check-cntnr {
+      margin-left: 16px;
+    }
+  
+    .time-duration-check-btn {
+      color: white;
+      background-color: black;
+      height: 60px;
+      margin-top: 5px;
+      border-radius: 6px;
+    }
+  
+    .time-duration-check-red-btn {
+      background-color: #cc0000;
+      color: white;
+      width: 25px;
+      height: 60px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #cc0000;
+    }
+  
+    .pie-chart {
+      margin-left: 100px;
+      margin-top: 10px;
+    }
+  
+    .notification-cntnr {
+      margin-left: 60px;
+      margin-top: 13px;
+    }
+  
+    .notification-btn {
+      background-color: #3df1c2;
+      width: 35px;
+      height: 40px;
+      border: 1px solid #3df1c2;
+      border-radius: 10px;
+    }
+  
+    .tool-tip-cntnr {
+      width: 250px;
+      height: 140px;
+      padding: 2px;
+      background-color: #1f2630;
+      border-radius: 5px;
+      margin-top: 13px;
+      position: absolute;
+    }
+  
+    .tool-tip-border {
+      height: 10px;
+      width: 97%;
+      border: 1px solid #101318;
+      background-color: #101318;
+      display: flex;
+      align-items: center;
+    }
+  
+    .tool-tip-protein {
+      height: 8px;
+      width: 70%;
+      margin-bottom: 1px;
+      background-color: #d17286;
+    }
+  
+    .protein-cntnr {
+      width: 94%;
+      background-color: rgb(13 15 18);
+      border-radius: 5px;
+      padding: 7px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  
+    .protein {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .protein span {
+      float: right;
+      color: white;
+    }
+  
+    .fats-cntnr {
+      width: 94%;
+      background-color: rgb(13 15 18);
+      border-radius: 5px;
+      padding: 7px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  
+    .fats span {
+      float: right;
+      color: white;
+    }
+  
+    .fats {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .tool-tip-fats {
+      height: 8px;
+      width: 60%;
+      margin-bottom: 1px;
+      background-color: #50afcf;
+    }
+  
+    .carbs-cntnr {
+      width: 94%;
+      background-color: rgb(13 15 18);
+      border-radius: 5px;
+      padding: 7px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  
+    .carbs span {
+      float: right;
+      color: white;
+    }
+  
+    .carbs {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .tool-tip-carbs {
+      height: 8px;
+      width: 80%;
+      margin-bottom: 1px;
+      background-color: #dfcb74;
+    }
+  
+    .tool-tip-border p {
+      color: white;
+      margin: 0;
+      padding: 0;
+      font-size: 8px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 800px) {
+    html {
+      background-color: #202731;
+    }
+  
+    .container {
+      background-color: #101318;
+      width: 120%;
+      margin: auto;
+      /* height: 80vh; */
+      padding: 20px;
+      border-radius: 20px;
+      margin-top: 50px;
+    }
+  
+    .progress-bar-text {
+      position: absolute;
+      margin-top: -22px;
+      font-size: 9px;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .health-detail-cntnr .heading {
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      font-size: 20px;
+    }
+  
+    .image img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      margin-left: 20px;
+      margin-top: 17px;
+    }
+  
+    .name-email {
+      margin-top: 12px;
+      margin-left: 17px;
+    }
+  
+    .name-email span {
+      font-weight: 600;
+    }
+  
+    .name-email small {
+      font-weight: 100;
+      font-size: 11px;
+    }
+  
+    .user-detail {
+      background-color: #1f2630;
+      width: 100%;
+      height: 70px;
+      color: whitesmoke;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      display: flex;
+    }
+  
+    .progress-bar {
+      padding: 0px;
+      margin-top: 10px;
+      margin-left: 70px;
+    }
+  
+    /* .user-detail {
+            width: 100%;
+            height: 100px;
+        } */
+  
+    .time-increase button {
+      width: 10px;
+      border-radius: 20px;
+      height: 40px;
+      color: white;
+      background-color: #1f2630;
+    }
+  
+    .heading-h4-data {
+      margin-right: -264px;
+      margin-left: 335px;
+    }
+  
+    .pie-chart-text {
+      position: absolute;
+      font-size: 9px;
+      margin-left: 10px;
+      margin-top: -37px;
+    }
+  
+    .progress-bar-btn {
+      margin-left: 17px;
+      margin-top: 1px;
+    }
+  
+    .progress-bar-plus-btn {
+      background-color: black;
+      color: white;
+      width: 28px;
+      height: 18px;
+      border-radius: 5px;
+    }
+  
+    .progress-bar-btn-text-step-target {
+      font-weight: 500;
+      font-size: 15px;
+      text-align: center;
+      position: relative;
+    }
+  
+    .progress-bar-btn-text {
+      font-size: 9px;
+      margin-top: -3px;
+      position: absolute;
+    }
+  
+    .progress-bar-minus-btn {
+      background-color: black;
+      color: white;
+      width: 28px;
+      height: 18px;
+      border-radius: 5px;
+      margin-top: -8px;
+      position: absolute;
+    }
+  
+    .time-duration {
+      /* margin-left: 123px; */
+      margin-left: 80px;
+      margin-top: 7px;
+    }
+  
+    .performed-date {
+      margin-top: -20px;
+    }
+  
+    .scheduled-date {
+    }
+  
+    .time-duration-check-cntnr {
+      margin-left: 16px;
+    }
+  
+    .time-duration-check-btn {
+      color: white;
+      background-color: black;
+      height: 60px;
+      margin-top: 5px;
+      border-radius: 6px;
+    }
+  
+    .time-duration-check-red-btn {
+      background-color: #cc0000;
+      color: white;
+      width: 25px;
+      height: 60px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #cc0000;
+    }
+  
+    .pie-chart {
+      margin-left: 100px;
+      margin-top: 10px;
+    }
+  
+    .notification-cntnr {
+      margin-left: 60px;
+      margin-top: 13px;
+    }
+  
+    .notification-btn {
+      background-color: #3df1c2;
+      width: 35px;
+      height: 40px;
+      border: 1px solid #3df1c2;
+      border-radius: 10px;
+    }
+  
+    .tool-tip-cntnr {
+      width: 250px;
+      height: 140px;
+      padding: 2px;
+      background-color: #1f2630;
+      border-radius: 5px;
+      margin-top: 13px;
+      position: absolute;
+    }
+  
+    .tool-tip-border {
+      height: 10px;
+      width: 97%;
+      border: 1px solid #101318;
+      background-color: #101318;
+      display: flex;
+      align-items: center;
+    }
+  
+    .tool-tip-protein {
+      height: 8px;
+      width: 70%;
+      margin-bottom: 1px;
+      background-color: #d17286;
+    }
+  
+    .protein-cntnr {
+      width: 94%;
+      background-color: rgb(13 15 18);
+      border-radius: 5px;
+      padding: 7px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  
+    .protein {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .protein span {
+      float: right;
+      color: white;
+    }
+  
+    .fats-cntnr {
+      width: 94%;
+      background-color: rgb(13 15 18);
+      border-radius: 5px;
+      padding: 7px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  
+    .fats span {
+      float: right;
+      color: white;
+    }
+  
+    .fats {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .tool-tip-fats {
+      height: 8px;
+      width: 60%;
+      margin-bottom: 1px;
+      background-color: #50afcf;
+    }
+  
+    .carbs-cntnr {
+      width: 94%;
+      background-color: rgb(13 15 18);
+      border-radius: 5px;
+      padding: 7px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  
+    .carbs span {
+      float: right;
+      color: white;
+    }
+  
+    .carbs {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .tool-tip-carbs {
+      height: 8px;
+      width: 80%;
+      margin-bottom: 1px;
+      background-color: #dfcb74;
+    }
+  
+    .tool-tip-border p {
+      color: white;
+      margin: 0;
+      padding: 0;
+      font-size: 8px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 977px) {
+    html {
+      background-color: #202731;
+    }
+  
+    .container {
+      background-color: #101318;
+      width: 105%;
+      margin: auto;
+      /* height: 80vh; */
+      padding: 20px;
+      border-radius: 20px;
+      margin-top: 50px;
+    }
+  
+    .progress-bar-text {
+      position: absolute;
+      margin-top: -22px;
+      font-size: 9px;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .health-detail-cntnr .heading {
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      font-size: 20px;
+    }
+  
+    .image img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      margin-left: 20px;
+      margin-top: 17px;
+    }
+  
+    .name-email {
+      margin-top: 12px;
+      margin-left: 17px;
+    }
+  
+    .name-email span {
+      font-weight: 600;
+    }
+  
+    .name-email small {
+      font-weight: 100;
+      font-size: 11px;
+    }
+  
+    .user-detail {
+      background-color: #1f2630;
+      width: 100%;
+      height: 70px;
+      color: whitesmoke;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      display: flex;
+    }
+  
+    .progress-bar {
+      padding: 0px;
+      margin-top: 10px;
+      margin-left: 70px;
+    }
+  
+    /* .user-detail {
+            width: 100%;
+            height: 100px;
+        } */
+  
+    .time-increase button {
+      width: 10px;
+      border-radius: 20px;
+      height: 40px;
+      color: white;
+      background-color: #1f2630;
+    }
+  
+    .heading-h4-data {
+      margin-right: -264px;
+      margin-left: 335px;
+    }
+  
+    .pie-chart-text {
+      position: absolute;
+      font-size: 9px;
+      margin-left: 10px;
+      margin-top: -37px;
+    }
+  
+    .progress-bar-btn {
+      margin-left: 17px;
+      margin-top: 1px;
+    }
+  
+    .progress-bar-plus-btn {
+      background-color: black;
+      color: white;
+      width: 28px;
+      height: 18px;
+      border-radius: 5px;
+    }
+  
+    .progress-bar-btn-text-step-target {
+      font-weight: 500;
+      font-size: 15px;
+      text-align: center;
+      position: relative;
+    }
+  
+    .progress-bar-btn-text {
+      font-size: 9px;
+      margin-top: -3px;
+      position: absolute;
+    }
+  
+    .progress-bar-minus-btn {
+      background-color: black;
+      color: white;
+      width: 28px;
+      height: 18px;
+      border-radius: 5px;
+      margin-top: -8px;
+      position: absolute;
+    }
+  
+    .time-duration {
+      /* margin-left: 123px; */
+      margin-left: 80px;
+      margin-top: 7px;
+    }
+  
+    .performed-date {
+      margin-top: -20px;
+    }
+  
+    .scheduled-date {
+    }
+  
+    .time-duration-check-cntnr {
+      margin-left: 16px;
+    }
+  
+    .time-duration-check-btn {
+      color: white;
+      background-color: black;
+      height: 60px;
+      margin-top: 5px;
+      border-radius: 6px;
+    }
+  
+    .time-duration-check-red-btn {
+      background-color: #cc0000;
+      color: white;
+      width: 25px;
+      height: 60px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #cc0000;
+    }
+  
+    .pie-chart {
+      margin-left: 100px;
+      margin-top: 10px;
+    }
+  
+    .notification-cntnr {
+      margin-left: 60px;
+      margin-top: 13px;
+    }
+  
+    .notification-btn {
+      background-color: #3df1c2;
+      width: 35px;
+      height: 40px;
+      border: 1px solid #3df1c2;
+      border-radius: 10px;
+    }
+  
+    .tool-tip-cntnr {
+      width: 250px;
+      height: 140px;
+      padding: 2px;
+      background-color: #1f2630;
+      border-radius: 5px;
+      margin-top: 13px;
+      position: absolute;
+    }
+  
+    .tool-tip-border {
+      height: 10px;
+      width: 97%;
+      border: 1px solid #101318;
+      background-color: #101318;
+      display: flex;
+      align-items: center;
+    }
+  
+    .tool-tip-protein {
+      height: 8px;
+      width: 70%;
+      margin-bottom: 1px;
+      background-color: #d17286;
+    }
+  
+    .protein-cntnr {
+      width: 94%;
+      background-color: rgb(13 15 18);
+      border-radius: 5px;
+      padding: 7px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  
+    .protein {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .protein span {
+      float: right;
+      color: white;
+    }
+  
+    .fats-cntnr {
+      width: 94%;
+      background-color: rgb(13 15 18);
+      border-radius: 5px;
+      padding: 7px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  
+    .fats span {
+      float: right;
+      color: white;
+    }
+  
+    .fats {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .tool-tip-fats {
+      height: 8px;
+      width: 60%;
+      margin-bottom: 1px;
+      background-color: #50afcf;
+    }
+  
+    .carbs-cntnr {
+      width: 94%;
+      background-color: rgb(13 15 18);
+      border-radius: 5px;
+      padding: 7px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  
+    .carbs span {
+      float: right;
+      color: white;
+    }
+  
+    .carbs {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .tool-tip-carbs {
+      height: 8px;
+      width: 80%;
+      margin-bottom: 1px;
+      background-color: #dfcb74;
+    }
+  
+    .tool-tip-border p {
+      color: white;
+      margin: 0;
+      padding: 0;
+      font-size: 8px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 977px) {
+    html {
+      background-color: #202731;
+    }
+  
+    .container {
+      background-color: #101318;
+      width: 97%;
+      margin: auto;
+      /* height: 80vh; */
+      padding: 20px;
+      border-radius: 20px;
+      margin-top: 50px;
+    }
+  
+    .progress-bar-text {
+      position: absolute;
+      margin-top: -22px;
+      font-size: 9px;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .health-detail-cntnr .heading {
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      font-size: 20px;
+    }
+  
+    .image img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      margin-left: 20px;
+      margin-top: 17px;
+    }
+  
+    .name-email {
+      margin-top: 12px;
+      margin-left: 17px;
+    }
+  
+    .name-email span {
+      font-weight: 600;
+    }
+  
+    .name-email small {
+      font-weight: 100;
+      font-size: 11px;
+    }
+  
+    .user-detail {
+      background-color: #1f2630;
+      width: 100%;
+      height: 70px;
+      color: whitesmoke;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      display: flex;
+    }
+  
+    .progress-bar {
+      padding: 0px;
+      margin-top: 10px;
+      margin-left: 70px;
+    }
+  
+    /* .user-detail {
+            width: 100%;
+            height: 100px;
+        } */
+  
+    .time-increase button {
+      width: 10px;
+      border-radius: 20px;
+      height: 40px;
+      color: white;
+      background-color: #1f2630;
+    }
+  
+    .heading-h4-data {
+      margin-right: -264px;
+      margin-left: 335px;
+    }
+  
+    .pie-chart-text {
+      position: absolute;
+      font-size: 9px;
+      margin-left: 10px;
+      margin-top: -37px;
+    }
+  
+    .progress-bar-btn {
+      margin-left: 17px;
+      margin-top: 1px;
+    }
+  
+    .progress-bar-plus-btn {
+      background-color: black;
+      color: white;
+      width: 28px;
+      height: 18px;
+      border-radius: 5px;
+    }
+  
+    .progress-bar-btn-text-step-target {
+      font-weight: 500;
+      font-size: 15px;
+      text-align: center;
+      position: relative;
+    }
+  
+    .progress-bar-btn-text {
+      font-size: 9px;
+      margin-top: -3px;
+      position: absolute;
+    }
+  
+    .progress-bar-minus-btn {
+      background-color: black;
+      color: white;
+      width: 28px;
+      height: 18px;
+      border-radius: 5px;
+      margin-top: -8px;
+      position: absolute;
+    }
+  
+    .time-duration {
+      /* margin-left: 123px; */
+      margin-left: 80px;
+      margin-top: 7px;
+    }
+  
+    .performed-date {
+      margin-top: -20px;
+    }
+  
+    .scheduled-date {
+    }
+  
+    .time-duration-check-cntnr {
+      margin-left: 16px;
+    }
+  
+    .time-duration-check-btn {
+      color: white;
+      background-color: black;
+      height: 60px;
+      margin-top: 5px;
+      border-radius: 6px;
+    }
+  
+    .time-duration-check-red-btn {
+      background-color: #cc0000;
+      color: white;
+      width: 25px;
+      height: 60px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #cc0000;
+    }
+  
+    .pie-chart {
+      margin-left: 100px;
+      margin-top: 10px;
+    }
+  
+    .notification-cntnr {
+      margin-left: 60px;
+      margin-top: 13px;
+    }
+  
+    .notification-btn {
+      background-color: #3df1c2;
+      width: 35px;
+      height: 40px;
+      border: 1px solid #3df1c2;
+      border-radius: 10px;
+    }
+  
+    .tool-tip-cntnr {
+      width: 250px;
+      height: 140px;
+      padding: 2px;
+      background-color: #1f2630;
+      border-radius: 5px;
+      margin-top: 13px;
+      position: absolute;
+    }
+  
+    .tool-tip-border {
+      height: 10px;
+      width: 97%;
+      border: 1px solid #101318;
+      background-color: #101318;
+      display: flex;
+      align-items: center;
+    }
+  
+    .tool-tip-protein {
+      height: 8px;
+      width: 70%;
+      margin-bottom: 1px;
+      background-color: #d17286;
+    }
+  
+    .protein-cntnr {
+      width: 94%;
+      background-color: rgb(13 15 18);
+      border-radius: 5px;
+      padding: 7px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  
+    .protein {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .protein span {
+      float: right;
+      color: white;
+    }
+  
+    .fats-cntnr {
+      width: 94%;
+      background-color: rgb(13 15 18);
+      border-radius: 5px;
+      padding: 7px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  
+    .fats span {
+      float: right;
+      color: white;
+    }
+  
+    .fats {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .tool-tip-fats {
+      height: 8px;
+      width: 60%;
+      margin-bottom: 1px;
+      background-color: #50afcf;
+    }
+  
+    .carbs-cntnr {
+      width: 94%;
+      background-color: rgb(13 15 18);
+      border-radius: 5px;
+      padding: 7px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  
+    .carbs span {
+      float: right;
+      color: white;
+    }
+  
+    .carbs {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .tool-tip-carbs {
+      height: 8px;
+      width: 80%;
+      margin-bottom: 1px;
+      background-color: #dfcb74;
+    }
+  
+    .tool-tip-border p {
+      color: white;
+      margin: 0;
+      padding: 0;
+      font-size: 8px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1041px) {
+    html {
+      background-color: #202731;
+    }
+  
+    .container {
+      background-color: #101318;
+      width: 90%;
+      margin: auto;
+      /* height: 80vh; */
+      padding: 20px;
+      border-radius: 20px;
+      margin-top: 50px;
+    }
+  
+    .progress-bar-text {
+      position: absolute;
+      margin-top: -22px;
+      font-size: 9px;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .health-detail-cntnr .heading {
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      font-size: 20px;
+    }
+  
+    .image img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      margin-left: 20px;
+      margin-top: 17px;
+    }
+  
+    .name-email {
+      margin-top: 12px;
+      margin-left: 17px;
+    }
+  
+    .name-email span {
+      font-weight: 600;
+    }
+  
+    .name-email small {
+      font-weight: 100;
+      font-size: 11px;
+    }
+  
+    .user-detail {
+      background-color: #1f2630;
+      width: 100%;
+      height: 70px;
+      color: whitesmoke;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      display: flex;
+    }
+  
+    .progress-bar {
+      padding: 0px;
+      margin-top: 10px;
+      margin-left: 70px;
+    }
+  
+    /* .user-detail {
+            width: 100%;
+            height: 100px;
+        } */
+  
+    .time-increase button {
+      width: 10px;
+      border-radius: 20px;
+      height: 40px;
+      color: white;
+      background-color: #1f2630;
+    }
+  
+    .heading-h4-data {
+      margin-right: -264px;
+      margin-left: 335px;
+    }
+  
+    .pie-chart-text {
+      position: absolute;
+      font-size: 9px;
+      margin-left: 10px;
+      margin-top: -37px;
+    }
+  
+    .progress-bar-btn {
+      margin-left: 17px;
+      margin-top: 1px;
+    }
+  
+    .progress-bar-plus-btn {
+      background-color: black;
+      color: white;
+      width: 28px;
+      height: 18px;
+      border-radius: 5px;
+    }
+  
+    .progress-bar-btn-text-step-target {
+      font-weight: 500;
+      font-size: 15px;
+      text-align: center;
+      position: relative;
+    }
+  
+    .progress-bar-btn-text {
+      font-size: 9px;
+      margin-top: -3px;
+      position: absolute;
+    }
+  
+    .progress-bar-minus-btn {
+      background-color: black;
+      color: white;
+      width: 28px;
+      height: 18px;
+      border-radius: 5px;
+      margin-top: -8px;
+      position: absolute;
+    }
+  
+    .time-duration {
+      /* margin-left: 123px; */
+      margin-left: 80px;
+      margin-top: 7px;
+    }
+  
+    .performed-date {
+      margin-top: -20px;
+    }
+  
+    .scheduled-date {
+    }
+  
+    .time-duration-check-cntnr {
+      margin-left: 16px;
+    }
+  
+    .time-duration-check-btn {
+      color: white;
+      background-color: black;
+      height: 60px;
+      margin-top: 5px;
+      border-radius: 6px;
+    }
+  
+    .time-duration-check-red-btn {
+      background-color: #cc0000;
+      color: white;
+      width: 25px;
+      height: 60px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #cc0000;
+    }
+  
+    .pie-chart {
+      margin-left: 100px;
+      margin-top: 10px;
+    }
+  
+    .notification-cntnr {
+      margin-left: 60px;
+      margin-top: 13px;
+    }
+  
+    .notification-btn {
+      background-color: #3df1c2;
+      width: 35px;
+      height: 40px;
+      border: 1px solid #3df1c2;
+      border-radius: 10px;
+    }
+  
+    .tool-tip-cntnr {
+      width: 250px;
+      height: 140px;
+      padding: 2px;
+      background-color: #1f2630;
+      border-radius: 5px;
+      margin-top: 13px;
+      position: absolute;
+    }
+  
+    .tool-tip-border {
+      height: 10px;
+      width: 97%;
+      border: 1px solid #101318;
+      background-color: #101318;
+      display: flex;
+      align-items: center;
+    }
+  
+    .tool-tip-protein {
+      height: 8px;
+      width: 70%;
+      margin-bottom: 1px;
+      background-color: #d17286;
+    }
+  
+    .protein-cntnr {
+      width: 94%;
+      background-color: rgb(13 15 18);
+      border-radius: 5px;
+      padding: 7px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  
+    .protein {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .protein span {
+      float: right;
+      color: white;
+    }
+  
+    .fats-cntnr {
+      width: 94%;
+      background-color: rgb(13 15 18);
+      border-radius: 5px;
+      padding: 7px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  
+    .fats span {
+      float: right;
+      color: white;
+    }
+  
+    .fats {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .tool-tip-fats {
+      height: 8px;
+      width: 60%;
+      margin-bottom: 1px;
+      background-color: #50afcf;
+    }
+  
+    .carbs-cntnr {
+      width: 94%;
+      background-color: rgb(13 15 18);
+      border-radius: 5px;
+      padding: 7px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+  
+    .carbs span {
+      float: right;
+      color: white;
+    }
+  
+    .carbs {
+      color: white;
+      font-size: 10px;
+    }
+  
+    .tool-tip-carbs {
+      height: 8px;
+      width: 80%;
+      margin-bottom: 1px;
+      background-color: #dfcb74;
+    }
+  
+    .tool-tip-border p {
+      color: white;
+      margin: 0;
+      padding: 0;
+      font-size: 8px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1102px) {
+  html {
+    background-color: #202731;
+  }
+
+  .container {
     background-color: #101318;
-    width: 75%;
+    width: 85%;
     margin: auto;
-    height: 80vh;
+    /* height: 80vh; */
     padding: 20px;
     border-radius: 20px;
     margin-top: 50px;
-}
+  }
 
-.progress-bar-text {
+  .progress-bar-text {
     position: absolute;
     margin-top: -22px;
     font-size: 9px;
     text-align: center;
     width: 100%;
-}
+  }
 
-.health-detail-cntnr .heading {
+  .health-detail-cntnr .heading {
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: flex-start;
     font-size: 20px;
-}
+  }
 
-.image img {
+  .image img {
     width: 35px;
     height: 35px;
     border-radius: 50%;
     margin-left: 20px;
     margin-top: 17px;
-}
+  }
 
-.name-email {
+  .name-email {
     margin-top: 12px;
     margin-left: 17px;
-}
+  }
 
-.name-email span {
-
+  .name-email span {
     font-weight: 600;
-}
+  }
 
-.name-email small {
+  .name-email small {
     font-weight: 100;
     font-size: 11px;
-}
+  }
 
-.user-detail {
+  .user-detail {
     background-color: #1f2630;
     width: 100%;
     height: 70px;
@@ -59,67 +3050,66 @@ html {
     border-radius: 10px;
     margin-bottom: 20px;
     display: flex;
-}
+  }
 
-.progress-bar {
+  .progress-bar {
     padding: 0px;
     margin-top: 10px;
     margin-left: 70px;
-}
+  }
 
-/* .user-detail {
-    width: 100%;
-    height: 100px;
-} */
+  /* .user-detail {
+          width: 100%;
+          height: 100px;
+      } */
 
-.time-increase button {
+  .time-increase button {
     width: 10px;
     border-radius: 20px;
     height: 40px;
     color: white;
     background-color: #1f2630;
-}
+  }
 
-.heading-h4-data {
-    margin-right: 130px;
+  .heading-h4-data {
+    margin-right: -264px;
+    margin-left: 335px;
+  }
 
-}
-
-.pie-chart-text {
+  .pie-chart-text {
     position: absolute;
     font-size: 9px;
     margin-left: 10px;
     margin-top: -37px;
-}
+  }
 
-.progress-bar-btn {
+  .progress-bar-btn {
     margin-left: 17px;
     margin-top: 1px;
-}
+  }
 
-.progress-bar-plus-btn {
+  .progress-bar-plus-btn {
     background-color: black;
     color: white;
     width: 28px;
     height: 18px;
     border-radius: 5px;
-}
+  }
 
-.progress-bar-btn-text-step-target {
+  .progress-bar-btn-text-step-target {
     font-weight: 500;
     font-size: 15px;
     text-align: center;
     position: relative;
-}
+  }
 
-.progress-bar-btn-text {
+  .progress-bar-btn-text {
     font-size: 9px;
     margin-top: -3px;
     position: absolute;
+  }
 
-}
-
-.progress-bar-minus-btn {
+  .progress-bar-minus-btn {
     background-color: black;
     color: white;
     width: 28px;
@@ -127,60 +3117,62 @@ html {
     border-radius: 5px;
     margin-top: -8px;
     position: absolute;
-}
+  }
 
-.time-duration {
-    margin-left: 123px;
-}
+  .time-duration {
+    /* margin-left: 123px; */
+    margin-left: 80px;
+    margin-top: 7px;
+  }
 
-.performed-date {
+  .performed-date {
     margin-top: -20px;
-}
+  }
 
-.scheduled-date {}
+  .scheduled-date {
+  }
 
-.time-duration-check-cntnr {
+  .time-duration-check-cntnr {
     margin-left: 16px;
-}
+  }
 
-.time-duration-check-btn {
+  .time-duration-check-btn {
     color: white;
     background-color: black;
     height: 60px;
     margin-top: 5px;
     border-radius: 6px;
-}
+  }
 
-.time-duration-check-red-btn {
-    background-color: #CC0000;
+  .time-duration-check-red-btn {
+    background-color: #cc0000;
     color: white;
     width: 25px;
     height: 60px;
     margin-top: 5px;
     border-radius: 6px;
-    border: 1px solid #CC0000;
-}
+    border: 1px solid #cc0000;
+  }
 
-.pie-chart {
+  .pie-chart {
     margin-left: 100px;
     margin-top: 10px;
-}
+  }
 
-.notification-cntnr {
+  .notification-cntnr {
     margin-left: 60px;
     margin-top: 13px;
-}
+  }
 
-.notification-btn {
+  .notification-btn {
     background-color: #3df1c2;
     width: 35px;
     height: 40px;
     border: 1px solid #3df1c2;
     border-radius: 10px;
+  }
 
-}
-
-.tool-tip-cntnr {
+  .tool-tip-cntnr {
     width: 250px;
     height: 140px;
     padding: 2px;
@@ -188,98 +3180,681 @@ html {
     border-radius: 5px;
     margin-top: 13px;
     position: absolute;
-}
+  }
 
-.tool-tip-border {
+  .tool-tip-border {
     height: 10px;
     width: 97%;
     border: 1px solid #101318;
     background-color: #101318;
     display: flex;
     align-items: center;
-}
+  }
 
-.tool-tip-protein {
+  .tool-tip-protein {
     height: 8px;
     width: 70%;
     margin-bottom: 1px;
     background-color: #d17286;
-}
+  }
 
-.protein-cntnr {
+  .protein-cntnr {
     width: 94%;
     background-color: rgb(13 15 18);
     border-radius: 5px;
     padding: 7px;
     margin-bottom: 5px;
-    margin-top: 5px
-}
+    margin-top: 5px;
+  }
 
-.protein {
+  .protein {
     color: white;
     font-size: 10px;
-}
+  }
 
-.protein span {
+  .protein span {
     float: right;
     color: white;
-}
+  }
 
-.fats-cntnr {
+  .fats-cntnr {
     width: 94%;
     background-color: rgb(13 15 18);
     border-radius: 5px;
     padding: 7px;
     margin-bottom: 5px;
-    margin-top: 5px
-}
+    margin-top: 5px;
+  }
 
-.fats span {
+  .fats span {
     float: right;
     color: white;
-}
+  }
 
-.fats {
+  .fats {
     color: white;
     font-size: 10px;
-}
+  }
 
-.tool-tip-fats {
+  .tool-tip-fats {
     height: 8px;
     width: 60%;
     margin-bottom: 1px;
     background-color: #50afcf;
-}
+  }
 
-.carbs-cntnr {
+  .carbs-cntnr {
     width: 94%;
     background-color: rgb(13 15 18);
     border-radius: 5px;
     padding: 7px;
     margin-bottom: 5px;
-    margin-top: 5px
-}
+    margin-top: 5px;
+  }
 
-.carbs span {
+  .carbs span {
     float: right;
     color: white;
-}
+  }
 
-.carbs {
+  .carbs {
     color: white;
     font-size: 10px;
-}
+  }
 
-.tool-tip-carbs {
+  .tool-tip-carbs {
     height: 8px;
     width: 80%;
     margin-bottom: 1px;
     background-color: #dfcb74;
-}
+  }
 
-.tool-tip-border p {
+  .tool-tip-border p {
     color: white;
     margin: 0;
     padding: 0;
     font-size: 8px;
+  }
+}
+
+
+
+
+
+@media only screen and (min-width: 1249px) {
+  html {
+    background-color: #202731;
+  }
+
+  .container {
+    background-color: #101318;
+    width: 75%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 50px;
+  }
+
+  .progress-bar-text {
+    position: absolute;
+    margin-top: -22px;
+    font-size: 9px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .health-detail-cntnr .heading {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 20px;
+  }
+
+  .image img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 17px;
+  }
+
+  .name-email {
+    margin-top: 12px;
+    margin-left: 17px;
+  }
+
+  .name-email span {
+    font-weight: 600;
+  }
+
+  .name-email small {
+    font-weight: 100;
+    font-size: 11px;
+  }
+
+  .user-detail {
+    background-color: #1f2630;
+    width: 100%;
+    height: 70px;
+    color: whitesmoke;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+  }
+
+  .progress-bar {
+    padding: 0px;
+    margin-top: 10px;
+    margin-left: 70px;
+  }
+
+  /* .user-detail {
+        width: 100%;
+        height: 100px;
+    } */
+
+  .time-increase button {
+    width: 10px;
+    border-radius: 20px;
+    height: 40px;
+    color: white;
+    background-color: #1f2630;
+  }
+
+  .heading-h4-data {
+    margin-right: 103px;
+    margin-left: 18px;
+  }
+
+  .pie-chart-text {
+    position: absolute;
+    font-size: 9px;
+    margin-left: 10px;
+    margin-top: -37px;
+  }
+
+  .progress-bar-btn {
+    margin-left: 17px;
+    margin-top: 1px;
+  }
+
+  .progress-bar-plus-btn {
+    background-color: black;
+    color: white;
+    width: 28px;
+    height: 18px;
+    border-radius: 5px;
+  }
+
+  .progress-bar-btn-text-step-target {
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+  }
+
+  .progress-bar-btn-text {
+    font-size: 9px;
+    margin-top: -3px;
+    position: absolute;
+  }
+
+  .progress-bar-minus-btn {
+    background-color: black;
+    color: white;
+    width: 28px;
+    height: 18px;
+    border-radius: 5px;
+    margin-top: -8px;
+    position: absolute;
+  }
+
+  .time-duration {
+    /* margin-left: 123px; */
+    margin-left: 80px;
+    margin-top: 7px;
+  }
+
+  .performed-date {
+    margin-top: -20px;
+  }
+
+  .scheduled-date {
+  }
+
+  .time-duration-check-cntnr {
+    margin-left: 16px;
+  }
+
+  .time-duration-check-btn {
+    color: white;
+    background-color: black;
+    height: 60px;
+    margin-top: 5px;
+    border-radius: 6px;
+  }
+
+  .time-duration-check-red-btn {
+    background-color: #cc0000;
+    color: white;
+    width: 25px;
+    height: 60px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #cc0000;
+  }
+
+  .pie-chart {
+    margin-left: 100px;
+    margin-top: 10px;
+  }
+
+  .notification-cntnr {
+    margin-left: 60px;
+    margin-top: 13px;
+  }
+
+  .notification-btn {
+    background-color: #3df1c2;
+    width: 35px;
+    height: 40px;
+    border: 1px solid #3df1c2;
+    border-radius: 10px;
+  }
+
+  .tool-tip-cntnr {
+    width: 250px;
+    height: 140px;
+    padding: 2px;
+    background-color: #1f2630;
+    border-radius: 5px;
+    margin-top: 13px;
+    position: absolute;
+  }
+
+  .tool-tip-border {
+    height: 10px;
+    width: 97%;
+    border: 1px solid #101318;
+    background-color: #101318;
+    display: flex;
+    align-items: center;
+  }
+
+  .tool-tip-protein {
+    height: 8px;
+    width: 70%;
+    margin-bottom: 1px;
+    background-color: #d17286;
+  }
+
+  .protein-cntnr {
+    width: 94%;
+    background-color: rgb(13 15 18);
+    border-radius: 5px;
+    padding: 7px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  .protein {
+    color: white;
+    font-size: 10px;
+  }
+
+  .protein span {
+    float: right;
+    color: white;
+  }
+
+  .fats-cntnr {
+    width: 94%;
+    background-color: rgb(13 15 18);
+    border-radius: 5px;
+    padding: 7px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  .fats span {
+    float: right;
+    color: white;
+  }
+
+  .fats {
+    color: white;
+    font-size: 10px;
+  }
+
+  .tool-tip-fats {
+    height: 8px;
+    width: 60%;
+    margin-bottom: 1px;
+    background-color: #50afcf;
+  }
+
+  .carbs-cntnr {
+    width: 94%;
+    background-color: rgb(13 15 18);
+    border-radius: 5px;
+    padding: 7px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  .carbs span {
+    float: right;
+    color: white;
+  }
+
+  .carbs {
+    color: white;
+    font-size: 10px;
+  }
+
+  .tool-tip-carbs {
+    height: 8px;
+    width: 80%;
+    margin-bottom: 1px;
+    background-color: #dfcb74;
+  }
+
+  .tool-tip-border p {
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 8px;
+  }
+}
+
+
+
+
+
+@media only screen and (min-width: 1290px) {
+  html {
+    background-color: #202731;
+  }
+
+  .container {
+    background-color: #101318;
+    width: 75%;
+    margin: auto;
+    height: 80vh;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 50px;
+  }
+
+  .progress-bar-text {
+    position: absolute;
+    margin-top: -22px;
+    font-size: 9px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .health-detail-cntnr .heading {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 189px;
+  }
+
+  .image img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 17px;
+  }
+
+  .name-email {
+    margin-top: 12px;
+    margin-left: 17px;
+  }
+
+  .name-email span {
+    font-weight: 600;
+  }
+
+  .name-email small {
+    font-weight: 100;
+    font-size: 11px;
+  }
+
+  .user-detail {
+    background-color: #1f2630;
+    width: 100%;
+    height: 70px;
+    color: whitesmoke;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+  }
+
+  .progress-bar {
+    padding: 0px;
+    margin-top: 10px;
+    margin-left: 70px;
+  }
+
+  /* .user-detail {
+          width: 100%;
+          height: 100px;
+      } */
+
+  .time-increase button {
+    width: 10px;
+    border-radius: 20px;
+    height: 40px;
+    color: white;
+    background-color: #1f2630;
+  }
+
+  .heading-h4-data {
+    margin-right: 95px;
+  }
+
+  .pie-chart-text {
+    position: absolute;
+    font-size: 9px;
+    margin-left: 10px;
+    margin-top: -37px;
+  }
+
+  .progress-bar-btn {
+    margin-left: 17px;
+    margin-top: 1px;
+  }
+
+  .progress-bar-plus-btn {
+    background-color: black;
+    color: white;
+    width: 28px;
+    height: 18px;
+    border-radius: 5px;
+  }
+
+  .progress-bar-btn-text-step-target {
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+  }
+
+  .progress-bar-btn-text {
+    font-size: 9px;
+    margin-top: -3px;
+    position: absolute;
+  }
+
+  .progress-bar-minus-btn {
+    background-color: black;
+    color: white;
+    width: 28px;
+    height: 18px;
+    border-radius: 5px;
+    margin-top: -8px;
+    position: absolute;
+  }
+
+  .time-duration {
+    /* margin-left: 123px; */
+    margin-left: 80px;
+    margin-top: 7px;
+  }
+
+  .performed-date {
+    margin-top: -20px;
+  }
+
+  .scheduled-date {
+  }
+
+  .time-duration-check-cntnr {
+    margin-left: 16px;
+  }
+
+  .time-duration-check-btn {
+    color: white;
+    background-color: black;
+    height: 60px;
+    margin-top: 5px;
+    border-radius: 6px;
+  }
+
+  .time-duration-check-red-btn {
+    background-color: #cc0000;
+    color: white;
+    width: 25px;
+    height: 60px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #cc0000;
+  }
+
+  .pie-chart {
+    margin-left: 100px;
+    margin-top: 10px;
+  }
+
+  .notification-cntnr {
+    margin-left: 60px;
+    margin-top: 13px;
+  }
+
+  .notification-btn {
+    background-color: #3df1c2;
+    width: 35px;
+    height: 40px;
+    border: 1px solid #3df1c2;
+    border-radius: 10px;
+  }
+
+  .tool-tip-cntnr {
+    width: 250px;
+    height: 140px;
+    padding: 2px;
+    background-color: #1f2630;
+    border-radius: 5px;
+    margin-top: 13px;
+    position: absolute;
+  }
+
+  .tool-tip-border {
+    height: 10px;
+    width: 97%;
+    border: 1px solid #101318;
+    background-color: #101318;
+    display: flex;
+    align-items: center;
+  }
+
+  .tool-tip-protein {
+    height: 8px;
+    width: 70%;
+    margin-bottom: 1px;
+    background-color: #d17286;
+  }
+
+  .protein-cntnr {
+    width: 94%;
+    background-color: rgb(13 15 18);
+    border-radius: 5px;
+    padding: 7px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  .protein {
+    color: white;
+    font-size: 10px;
+  }
+
+  .protein span {
+    float: right;
+    color: white;
+  }
+
+  .fats-cntnr {
+    width: 94%;
+    background-color: rgb(13 15 18);
+    border-radius: 5px;
+    padding: 7px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  .fats span {
+    float: right;
+    color: white;
+  }
+
+  .fats {
+    color: white;
+    font-size: 10px;
+  }
+
+  .tool-tip-fats {
+    height: 8px;
+    width: 60%;
+    margin-bottom: 1px;
+    background-color: #50afcf;
+  }
+
+  .carbs-cntnr {
+    width: 94%;
+    background-color: rgb(13 15 18);
+    border-radius: 5px;
+    padding: 7px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  .carbs span {
+    float: right;
+    color: white;
+  }
+
+  .carbs {
+    color: white;
+    font-size: 10px;
+  }
+
+  .tool-tip-carbs {
+    height: 8px;
+    width: 80%;
+    margin-bottom: 1px;
+    background-color: #dfcb74;
+  }
+
+  .tool-tip-border p {
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 8px;
+  }
 }
